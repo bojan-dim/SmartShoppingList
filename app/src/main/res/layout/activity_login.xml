@@ -12,14 +12,9 @@
     tools:context="elsys.org.smartshoppinglist.LoginActivity">
 
     <com.facebook.login.widget.LoginButton
+        android:layout_marginTop="180dp"
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="184dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="10dp" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
