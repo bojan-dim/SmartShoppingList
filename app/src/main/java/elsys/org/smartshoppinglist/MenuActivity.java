@@ -20,21 +20,21 @@ public class MenuActivity extends AppCompatActivity {
 
         addListButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent addListIntent = new Intent(MenuActivity.this, MenuActivity.class);
+                Intent addListIntent = new Intent(MenuActivity.this, AddListActivity.class);
                 startActivity(addListIntent);
             }
         });
 
         showListsButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent showListIntent = new Intent(MenuActivity.this, MenuActivity.class);
+                Intent showListIntent = new Intent(MenuActivity.this, ShowListsActivity.class);
                 startActivity(showListIntent);
             }
         });
 
         removeListButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent removeListIntent = new Intent(MenuActivity.this, MenuActivity.class);
+                Intent removeListIntent = new Intent(MenuActivity.this, RemoveListActivity.class);
                 startActivity(removeListIntent);
             }
         });

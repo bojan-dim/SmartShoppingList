@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
+                String currentFacebookUserId = loginResult.getAccessToken().getUserId();
                 Intent menuIntent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(menuIntent);
             }
